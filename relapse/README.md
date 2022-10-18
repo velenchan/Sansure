@@ -27,8 +27,9 @@ Following the method presented in [1], we preprocess the genotype matrix as $B$,
 
 Recall that the original $A$ has size $M\times N$. Assume that the rank of $A$ is $r$, and that the Singular Value Decomposition (SVD) of the original matrix is $A = USV^T$, where $U\in\mathbb{R}^{M\times M}$ is an orthogonal matrix, $S$ is a $M\times r$ diagonal matrix, and $V$ is a $N\times r$ matrix with each column orthogonal to each other. Suppose that we only take the first $k$ components. Then $$X  = A^TA = VS^2V^T \approx V_k S_k^2V_k^T.$$ If we consider $Y = S_kV_k^T\in \mathbb{R}^{k\times N}$ as the data with reduced dimension, then we obtain a data set with $N$ samples, each of them with $k$ features.
 
-`Remark 1`: *Note that $Y\neq S_k^2V_k^T$, but $Y = S_kV_k^T$.*
-`Remark 2`: *From now on, $Y = S_kV_k^T$ is the new data, which only have $k$ feautures, and still have $N$ samples. We train and test different models with $Y$, not the original $A$ or $B$.*
+`Remark 1`: Note that $Y\neq S_k^2V_k^T$, but $Y = S_kV_k^T$.
+
+`Remark 2`: From now on, $Y = S_kV_k^T$ is the new data, which only have $k$ feautures, and still have $N$ samples. We train and test different models with $Y$, not the original $A$ or $B$.
 
 # Todo list
 
@@ -38,4 +39,4 @@ Recall that the original $A$ has size $M\times N$. Assume that the rank of $A$ i
 
 3. 以 $Y$ 为新数据，尝试不同分类分类方法，例如朴素贝叶斯分类、决策树 (ID3, C4.5， C5.0 等)、k-近邻、神经网络等。
 
-`注：` $\color{red} 剔除无效数据后，仅有~103~个有效样本，这可能会影响建模效果，不过现在我们重在走通方法$.
+`注：`  剔除无效数据后，仅有~103~个有效样本，这可能会影响建模效果，不过现在我们重在走通方法.
