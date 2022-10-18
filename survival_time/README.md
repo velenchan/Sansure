@@ -18,6 +18,6 @@ Following the method presented in [1], we preprocess the genotype matrix as $B$,
 
 Recall that the original $A$ is of $M\times N$. Assume that the rank of $A$ is $r$, and that the Singular Value Decomposition (SVD) of the original matrix is $A = USV^T$, where $U\in\mathbb{R}^{M\times M}$ is an orthogonal matrix, $S$ is a $M\times r$ diagonal matrix, and $V$ is a $N\times r$ matrix with each column orthogonal to each other. Suppose that we only take the first $k$ components. Then $$X  = A^TA = VS^2V^T \approx V_k S_k^2V_k^T.$$ If we consider $Y = S_kV_k^T\in \mathbb{R}^{k\times N}$ as the data with reduced dimension, then we obtain a data set with $N$ samples, each of them with $k$ features.
 
-`Remark 1`: *Note that $Y\neq S_k^2V_k^T$, but $Y = S_kV_k^T$.*
+`Remark 1`: Note that $Y\neq S_k^2V_k^T$, but $Y = S_kV_k^T$.
 
 [1] Nature Genetics 2006 Vol. 38 Issue 8 Pages 904-909 DOI: 10.1038/ng1847

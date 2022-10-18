@@ -40,3 +40,5 @@ Recall that the original $A$ has size $M\times N$. Assume that the rank of $A$ i
 3. 以 $Y$ 为新数据，尝试不同分类分类方法，例如朴素贝叶斯分类、决策树 (ID3, C4.5， C5.0 等)、k-近邻、神经网络等。
 
 `注：`  剔除无效数据后，仅有~103~个有效样本，这可能会影响建模效果，不过现在我们重在走通方法.
+
+[1] Nature Genetics 2006 Vol. 38 Issue 8 Pages 904-909 DOI: 10.1038/ng1847
