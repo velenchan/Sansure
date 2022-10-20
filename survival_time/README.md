@@ -6,13 +6,27 @@ Now the genotype matrix is a $M\times N \, ( = 3822299 \times 457)$ matrix $A = 
 
 
 # survival_time_label.dat
-The survival time for these $457$ samples.
+The survival time for these $457$  out of 1k samples.
 
 # RawX.xlsx
 Directly compute $X = A^TA$ for PCA, which is saved as `RawX.xlsx`.
 
 # PreprocX.xlsx
 Following the method presented in [1], we preprocess the genotype matrix as $B$, which is of the same size of $A$. Then we compute $X = B^TB$ for PCA, which is saved as `PreprocX.xlsx`.
+
+# sparse_survival_time_genotype_1663.zip
+The genotype data for 3k samples. There are only $1663$ effective samples for survival time.  Note that $M = 1892,6217$ for 3k samples.
+
+# survival_time_lable_1663.dat
+The labels for 3k samples.
+
+# covariance_matrix.py
+
+The python code to compute the covariance matrix of the input genotype data for 3k samples. 
+
+# preproc_cov_mat.zip
+
+The computed covariance matrix is of size $1663\times 1663$.
 
 # Method
 
