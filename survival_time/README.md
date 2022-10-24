@@ -24,6 +24,10 @@ The labels for 3k samples.
 
 The python code to compute the covariance matrix of the input genotype data for 3k samples. 
 
+# truncated_svd.py
+
+The python code to directly compute the SVD. The output will be the matrix $Y$ in the `Method` section. You can set the parameter `num_components` to the number of feature you want to reduce.
+
 # preproc_cov_mat.zip
 
 The computed covariance matrix is of size $1663\times 1663$.
